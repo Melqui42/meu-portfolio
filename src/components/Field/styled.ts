@@ -49,4 +49,13 @@ export const TextArea = styled.textarea`
   }
 `
 export const Label = styled.label``
-export const Action = styled.button``
+export const Action = styled.button`
+  border: none;
+  padding: 1rem;
+  opacity: 0.5;
+  cursor: not-allowed;
+  font-size: 1.3rem;
+  border-radius: 0.6rem;
+  background-color: #64f4ab;
+  font-family: 'Roboto Mono', monospace;
+`

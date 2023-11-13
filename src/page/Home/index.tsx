@@ -18,7 +18,7 @@ const Home: React.FC = () => {
   const [menuMobile, setMenuMobile] = useState(false)
   return (
     <>
-      <C.Header>
+      <C.Header id="Home">
         <div className="container">
           <div className="center">
             <div className="content">
@@ -76,31 +76,32 @@ const Home: React.FC = () => {
                     Github
                   </a>
                 </li>
+                <li className="item">
+                  <a
+                    href="https://www.instagram.com/melqui_m4rtins/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Ai.AiFillInstagram className="icon" />
+                    Instagram
+                  </a>
+                </li>
               </ul>
             </div>
-            <ul className="others">
-              <li className="item">
-                <button className="emailButton">
-                  <Md.MdEmail className="icon" />
-                </button>
-              </li>
-              <li className="item">
-                <button
-                  className="menuMobileButton"
-                  onClick={() => setMenuMobile(!menuMobile)}
-                >
-                  {!menuMobile ? (
-                    <Hi.HiMenu className="icon" />
-                  ) : (
-                    <Ai.AiOutlineClose className="icon" />
-                  )}
-                </button>
-              </li>
-            </ul>
+            <button
+              className="menuMobileButton"
+              onClick={() => setMenuMobile(!menuMobile)}
+            >
+              {!menuMobile ? (
+                <Hi.HiMenu className="icon" />
+              ) : (
+                <Ai.AiOutlineClose className="icon" />
+              )}
+            </button>
           </div>
         </div>
       </C.Header>
-      <C.HomeSection id="Home">
+      <C.HomeSection>
         <div className="center">
           <article className="content">
             <span className="job">Front-End Developer</span>
@@ -250,7 +251,7 @@ const Home: React.FC = () => {
                 </Card.Root>
               </li>
               <li className="item">
-                <Card.Root icon={Io5.IoCallSharp} cardColor={false}>
+                <Card.Root icon={Md.MdEmail} cardColor={false}>
                   <Card.Title>Email</Card.Title>
                   <Card.Description>
                     melquisedeque.martins42@gmail.com
@@ -261,7 +262,7 @@ const Home: React.FC = () => {
                 <Card.Root icon={Im.ImLocation2} cardColor={false}>
                   <Card.Title>Localização</Card.Title>
                   <Card.Description>
-                    Brasil - Pernambuco, Paulista, Jaguarana R.São Jorge N42
+                    Brasil - Pernambuco, Paulista
                   </Card.Description>
                 </Card.Root>
               </li>
@@ -285,6 +286,7 @@ const Home: React.FC = () => {
               <Field.Root icon={Ai.AiFillMessage} style={{ height: '100%' }}>
                 <Field.TextArea placeholder="Mensagem..." />
               </Field.Root>
+              <Field.Action>Enviar</Field.Action>
             </div>
           </article>
         </div>
@@ -348,6 +350,16 @@ const Home: React.FC = () => {
                 >
                   <Ai.AiOutlineGithub className="icon" />
                   Github
+                </a>
+              </li>
+              <li className="item">
+                <a
+                  href="https://www.instagram.com/melqui_m4rtins/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Ai.AiFillInstagram className="icon" />
+                  Instagram
                 </a>
               </li>
             </ul>

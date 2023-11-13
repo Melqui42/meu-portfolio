@@ -96,36 +96,24 @@ export const Header = styled.header`
         }
       }
 
-      .others {
-        gap: 1rem;
-        display: flex;
-        align-items: center;
+      .menuMobileButton {
+        display: none;
+        padding: 0.8rem;
+        transition: 0.3s;
+        border-radius: 100%;
+        background-color: transparent;
 
-        .item {
-          .emailButton,
-          .menuMobileButton {
-            padding: 0.8rem;
-            transition: 0.3s;
-            border-radius: 100%;
-            background-color: transparent;
+        .icon {
+          color: #ffffff;
+          transition: 0.3s;
+          font-size: 1.5rem;
+        }
 
-            .icon {
-              color: #ffffff;
-              transition: 0.3s;
-              font-size: 1.5rem;
-            }
+        &:hover {
+          background-color: #333438;
 
-            &:hover {
-              background-color: #333438;
-
-              .icon {
-                color: #64f4ab;
-              }
-            }
-          }
-
-          .menuMobileButton {
-            display: none;
+          .icon {
+            color: #64f4ab;
           }
         }
       }
@@ -178,18 +166,8 @@ export const Header = styled.header`
           }
         }
 
-        .others {
-          margin-right: 2rem;
-
-          .item {
-            .emailButton {
-              display: none;
-            }
-
-            .menuMobileButton {
-              display: flex;
-            }
-          }
+        .menuMobileButton {
+          display: flex;
         }
       }
     }
@@ -793,7 +771,7 @@ export const ContactMeSection = styled.section`
   }
 
   @media (min-width: 320px) and (max-width: 720px) {
-    height: 1000px;
+    height: 1100px;
 
     .center {
       gap: 1rem;
