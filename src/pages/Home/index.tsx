@@ -192,11 +192,14 @@ const Home: React.FC<HomeProps> = ({ theme, setTheme }) => {
               >
                 Say Hello! <Icon.Ri.RiSendPlaneLine className="icon" />
               </Button>
-              <a href="#AboutMe" className="section-scroll-down">
+              <button
+                className="section-scroll-down"
+                onClick={() => scrollToTop(600)}
+              >
                 <Icon.Lu.LuMouse className="icon" />
                 Scroll down
                 <Icon.Fa.FaArrowDown className="icon arrow" />
-              </a>
+              </button>
             </article>
           </div>
           <img src={require('assets/myPhotos/photo1.png')} alt="" />
@@ -240,9 +243,11 @@ const Home: React.FC<HomeProps> = ({ theme, setTheme }) => {
                 2020 e desde então tenho dedicado meu tempo ao aprendizado das
                 tecnologias voltadas para o Frontend.
               </p>
-              <Button>
-                Download CV <Icon.Gr.GrDocumentText className="icon" />
-              </Button>
+              <a href="https://download1073.mediafire.com/nsc8q44w83sg593goMNkWuA26PK0XNDTnGLCF1j4egU5UnUWG626k1HyoGzQdL29FAnzV3Hb9IFSmHOcWYXs2KfpO5gtWp__1KF-mP4vZk9pC6H4L3HMa1fDNcxl-LTuwIg0dPOecU1HcBf3lILb-1nA9Cr38Kn1xi6CTnw4DgcVFRe7/opt1ayoj4c5pkib/Meu+Curr%C3%ADculo.pdf">
+                <Button>
+                  Download CV <Icon.Gr.GrDocumentText className="icon" />
+                </Button>
+              </a>
             </article>
           </div>
         </div>

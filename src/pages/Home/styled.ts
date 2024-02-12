@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const ScrollToTop = styled.button`
+  z-index: 2;
   bottom: 50px;
   right: 20px;
   position: fixed;
@@ -99,7 +100,7 @@ export const Header = styled.header`
             top: 35px;
             opacity: 0;
 
-            .header-mobile-menu-list {
+            .menu-mobile-list {
               visibility: hidden;
             }
           }
@@ -432,6 +433,7 @@ export const Home = styled.section`
         margin-top: 6rem;
         transition: 0.3s;
         align-items: center;
+        background-color: transparent;
 
         .icon {
           color: ${(props) => props.theme.text.primary};
@@ -598,6 +600,10 @@ export const AboutMe = styled.section`
           color: ${(props) => props.theme.text.secondry};
           font-size: 1.1rem;
           line-height: 1.3rem;
+        }
+
+        a {
+          max-width: 180px;
         }
       }
     }
